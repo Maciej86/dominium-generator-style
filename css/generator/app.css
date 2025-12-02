@@ -42,8 +42,8 @@ textarea {
   resize: vertical;
 }
 
-button,
-select {
+.left_panel button,
+.left_panel select {
   padding: 8px 15px;
   background: rgb(15, 121, 219);
   border: none;
@@ -54,12 +54,12 @@ select {
   transition: background 0.4s;
 }
 
-button:hover,
-option:hover {
+.left_panel button:hover,
+.left_panel option:hover {
   background: rgb(12, 93, 168);
 }
 
-button:disabled {
+.left_panel button:disabled {
   background-color: rgb(238, 238, 238);
   color: rgb(138, 138, 138);
 }

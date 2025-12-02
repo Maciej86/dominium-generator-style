@@ -42,6 +42,7 @@ a {
   line-height: var(--body-line-height);
 }
 
+.generation_cookie button,
 .generation_body button,
 .generation_body input,
 .generation_body textarea {
@@ -104,6 +105,7 @@ a {
   }
 }
 
+.generation_cookie .button_link,
 .generation_body .button_link {
   display: inline-block;
   margin-top: var(--button-link-margin-top);
@@ -119,6 +121,7 @@ a {
   cursor: pointer;
 }
 
+.generation_cookie .button_link:hover,
 .generation_body .button_link:hover {
   background-color: var(--button-link-hover-bg);
   border: var(--button-link-hover-border);
