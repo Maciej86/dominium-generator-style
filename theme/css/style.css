@@ -66,18 +66,18 @@ a {
 
 .generation_body input:hover,
 .generation_body textarea:hover {
-  border-color: var(--warning);
+  border-color: var(--body-input-hover-border-color);
 }
 
 .generation_body input:focus,
 .generation_body textarea:focus {
   outline: none;
-  border-color: var(--warning-dark);
+  border-color: var(--body-input-focus-border-color);
 }
 
 .generation_body input::placeholder,
 .generation_body textarea::placeholder {
-  color: var(--dark-light);
+  color: var(--body-input-placeholder-color);
 }
 
 .generation_body textarea {
