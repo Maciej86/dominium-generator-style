@@ -42,6 +42,9 @@ textarea {
   resize: vertical;
 }
 
+.modal button,
+.right_panel_tabs button,
+.right_panel_tabs select,
 .left_panel button,
 .left_panel select {
   padding: 8px 15px;
@@ -54,6 +57,9 @@ textarea {
   transition: background 0.4s;
 }
 
+.modal button:hover,
+.right_panel_tabs button:hover,
+.right_panel_tabs option:hover,
 .left_panel button:hover,
 .left_panel option:hover {
   background: rgb(12, 93, 168);
