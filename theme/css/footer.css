@@ -1,0 +1,109 @@
+/* FOOTER */
+.footer {
+  padding: var(--footer-padding);
+  background-color: var(--footer-bg);
+  color: var(--footer-color);
+  font-size: var(--footer-font-size);
+}
+
+.footer > .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__box {
+  width: var(--footer-box-width);
+  padding: var(--footer-box-padding);
+}
+
+@media (max-width: 800px) {
+  .footer__box {
+    width: 50%;
+  }
+}
+
+.footer__box:last-child {
+  margin-top: 30px;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .footer__box:last-child {
+    margin-top: 0px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__box {
+    width: 100%;
+  }
+
+  .footer__box:last-child {
+    width: 100%;
+  }
+}
+
+.footer__box__title {
+  font-size: var(--fotter-box-title-font-size);
+}
+
+.footer__box__title-small {
+  font-size: var(--footer-box-title-small-font-size);
+  font-weight: var(--footer-box-title-small-font-weight);
+}
+
+.footer__box > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__box > ul li {
+  display: flex;
+  align-items: center;
+  gap: var(--footer-box-list-item-gap);
+  padding: var(--footer-box-list-item-padding);
+}
+
+.footer__box > ul li span {
+  color: var(--footer-box-list-item-icon-color);
+}
+
+.footer__box .footer__box__list-contact li a {
+  color: var(--footer-box-list-item-link-color);
+  text-decoration: var(--footer-box-list-item-link-text-decoration);
+}
+
+.footer__box .footer__box__list-contact li a:hover {
+  color: var(--footer-box-list-item-link-hover-color);
+  text-decoration: var(--footer-box-list-item-link-hover-text-decoration);
+}
+
+.footer_navigation .menu a {
+  color: var(--footer-color);
+}
+
+.footer_navigation .menu a:hover {
+  color: var(--nav-menu-link-hover-color);
+}
+
+.footer__box__social_media {
+  display: flex;
+  align-items: center;
+  gap: var(--fotter-box-social-media-gap);
+  margin-top: var(--fotter-box-social-media-margin-top);
+}
+
+.footer__box__social_media a {
+  color: var(--fotter-box-social-media-link-color);
+  font-size: var(--fotter-box-social-media-link-font-size);
+  text-decoration: var(--fotter-box-social-media-link-text-decoration);
+  transition: color 0.4s;
+}
+
+.footer__box__social_media a:hover {
+  color: var(--fotter-box-social-media-link-hover-color);
+  text-decoration: var(--fotter-box-social-media-link-hover-text-decoration);
+}
+/* ------------- */

@@ -1,0 +1,101 @@
+/* COUNT */
+.count {
+  background-color: var(--count-bg);
+  padding: var(--count-padding);
+  color: var(--count-color);
+}
+
+@media (max-width: 600px) {
+  .count {
+    padding: var(--count-mobile-padding);
+  }
+}
+
+.count > .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.count__box {
+  width: 25%;
+  padding: var(--count-box-padding);
+  text-align: var(--count-box-text-align);
+  border-left: var(--count-box-border-left);
+  border-right: var(--count-box-border-right);
+}
+
+.count__box:first-child {
+  border-left: none;
+}
+
+.count__box:last-child {
+  border-right: none;
+}
+
+.count__box__title {
+  margin: var(--count-box-title-margin);
+  font-size: var(--count-box-title-font-size);
+  font-weight: var(--count-box-title-font-weight);
+}
+
+.count__box__description {
+  margin: var(--count-box-description-margin);
+  font-size: var(--count-box-description-font-size);
+  font-weight: var(--count-box-description-font-weight);
+  text-transform: var(--count-box-description-text-transform);
+}
+
+@media (max-width: 850px) {
+  .count__box {
+    width: 50%;
+    padding-bottom: 30px;
+  }
+
+  .count__box:nth-child(2) {
+    border-right: none;
+  }
+
+  .count__box:nth-child(3) {
+    padding-bottom: 0;
+    border-left: none;
+  }
+
+  .count__box:nth-child(4) {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .count__box {
+    width: 100%;
+    padding: var(--count-mobile-padding);
+    border-left: none;
+    border-right: none;
+    border-top: var(--count-box-border-left);
+    border-bottom: var(--count-box-border-right);
+  }
+
+  .count__box__title {
+    font-size: var(--count-mobile-box-title-font-size);
+  }
+
+  .count__box__description {
+    font-size: var(--count-mobile-box-description-font-size);
+  }
+
+  .count__box:nth-child(1) {
+    padding-top: 5px;
+    border-top: none;
+  }
+
+  .count__box:nth-child(3) {
+    padding-bottom: 20px;
+  }
+
+  .count__box:nth-child(4) {
+    padding-bottom: 5px;
+    border-bottom: none;
+  }
+}
+/* ------------- */

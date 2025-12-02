@@ -1,0 +1,144 @@
+/*
+Theme Name: Dominium
+Text Domain: dominium
+Author: Maciej Rościszewski
+Author URI: maciejrosciszewski@gmail.com
+Theme URI: https://github.com/Maciej86/dominium-theme-wordpress
+Description: Lekki motyw WordPress z Customizerem, idealny dla małych firm. Zawiera sekcje przygotowane do edycji.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* COMMON */
+/* Fix Generation - real theme Tag body*/
+.generation_html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.generation_html *,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+/* Fix Generation - real theme Tag body*/
+.generation_body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--body-bg);
+  font-family: "Archivo", sans-serif;
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  color: var(--body-color);
+}
+
+a {
+  transition: color 0.4s;
+}
+
+.generation_body p {
+  line-height: var(--body-line-height);
+}
+
+.generation_body button,
+.generation_body input,
+.generation_body textarea {
+  font-family: inherit;
+  font-size: var(--body-input-font-size);
+  color: var(--body-input-color);
+}
+
+.generation_body input,
+.generation_body textarea {
+  width: 100%;
+  padding: var(--body-input-padding);
+  background-color: var(--body-input-bg);
+  border: var(--body-input-border);
+}
+
+.generation_body input[type="submit"] {
+  width: auto;
+  margin-top: 20px;
+}
+
+.generation_body input:hover,
+.generation_body textarea:hover {
+  border-color: var(--warning);
+}
+
+.generation_body input:focus,
+.generation_body textarea:focus {
+  outline: none;
+  border-color: var(--warning-dark);
+}
+
+.generation_body input::placeholder,
+.generation_body textarea::placeholder {
+  color: var(--dark-light);
+}
+
+.generation_body textarea {
+  min-height: var(--body-textarea-min-height);
+  line-height: var(--body-textarea-line-height);
+  resize: none;
+}
+
+.generation_navigation .container,
+.generation_body .container,
+.generation_cookie .container {
+  width: 96%;
+  max-width: var(--body-container-max);
+  margin: 0 auto;
+  padding: var(--body-container-padding);
+}
+
+.generation_body .scroll_margin {
+  scroll-margin-top: var(--body-scroll-margin-top);
+}
+
+@media (max-width: 500px) {
+  .generation_body .scroll_margin {
+    scroll-margin-top: var(--body-mobile-scroll-margin-top);
+  }
+}
+
+.generation_body .button_link {
+  display: inline-block;
+  margin-top: var(--button-link-margin-top);
+  background-color: var(--button-link-bg);
+  border-radius: var(--button-link-border-radius);
+  border: var(--button-link-border);
+  padding: var(--button-link-padding);
+  font-size: var(--button-link-font-size);
+  font-weight: var(--button-link-font-weight);
+  color: var(--button-link-color);
+  text-decoration: var(--button-link-text-decoration);
+  transition: background 0.4s;
+  cursor: pointer;
+}
+
+.generation_body .button_link:hover {
+  background-color: var(--button-link-hover-bg);
+  border: var(--button-link-hover-border);
+  color: var(--button-link-hover-color);
+  text-decoration: var(--button-link-hover-text-decoration);
+}
+
+.generation_body .title_section {
+  margin: var(--title-section-margin);
+  font-size: var(--title-section-font-size);
+  font-weight: var(--title-section-font-weight);
+  text-align: var(--title-section-text-align);
+}
+
+.d_none {
+  display: none;
+}
+
+.page_top_margin {
+  margin-top: 100px;
+}
+
+/* ------------- */

@@ -1,0 +1,53 @@
+/* STEPS */
+.steps {
+  background-color: var(--steps-bg);
+  padding: var(--steps-padding);
+}
+
+.steps > .container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--steps-gap);
+}
+
+.steps__box {
+  width: 30%;
+}
+
+.steps__box__title {
+  position: relative;
+  margin-bottom: var(--steps-title-margin-bottom);
+  text-transform: var(--steps-title-transform);
+  font-weight: var(--steps-title-font-weight);
+}
+
+.steps__box__title::before {
+  content: "";
+  position: absolute;
+  top: var(--steps-border-top);
+  display: block;
+  width: var(--steps-border-width);
+  height: var(--steps-border-height);
+  background: var(--steps-border-bg);
+}
+
+@media (max-width: 800px) {
+  .steps > .container {
+    flex-direction: column;
+  }
+
+  .steps__box {
+    width: 100%;
+  }
+
+  .steps__box__title,
+  .steps__box__description {
+    text-align: var(--steps-mobile-text-align);
+  }
+
+  .steps__box__title::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* ------------- */

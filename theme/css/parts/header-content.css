@@ -1,0 +1,90 @@
+/* HEADER CONTENT */
+.header > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--header-content-color);
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__content__title {
+  margin: var(--header-content-title-margin);
+  font-size: var(--header-content-title-font-size);
+  font-weight: var(--header-content-font-weight);
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .header__content__title {
+    line-height: var(--header-content-mobile-line-height);
+  }
+}
+
+@media (max-width: 500px) {
+  .header__content__title {
+    font-size: var(--header-content-mobile-font-size);
+  }
+}
+
+.header__content__subtitle {
+  margin: var(--header-content-subtitle-margin);
+  text-align: center;
+  font-size: var(--header-content-subtitle-font-size);
+  font-weight: var(--header-content-subtitle-font-weight);
+  text-transform: var(--header-content-subtitle-text-transform);
+}
+
+.header__content__description {
+  width: var(--header-content-description-width);
+  margin-top: var(--header-content-description-margin-top);
+  text-align: var(--header-content-description-text-align);
+  font-size: var(--header-content-description-font-size);
+}
+
+@media (max-width: 800px) {
+  .header__content__description {
+    width: 100%;
+  }
+}
+
+.header__content__buttons {
+  display: flex;
+  gap: var(--header-content-container-buttons-gap);
+  margin-top: var(--header-content-container-buttons-margin-top);
+}
+
+@media (max-width: 500px) {
+  .header__content__buttons {
+    flex-direction: column;
+  }
+}
+
+.header__content__button {
+  min-width: var(--header-content-button-min-width);
+  background-color: var(--header-content-button-bg);
+  border: var(--header-content-button-border);
+  border-radius: var(--header-content-button-border-radius);
+  padding: var(--header-content-button-padding);
+  font-size: var(--header-content-button-font-size);
+  font-weight: var(--header-content-button-font-weight);
+  color: var(--header-content-button-color);
+  text-transform: var(--header-content-button-text-transform);
+  text-decoration: var(--header-content-button-text-decoration);
+  text-align: var(--header-content-button-text-align);
+  cursor: pointer;
+  transition: background 0.4s, border 0.4s;
+}
+
+.header__content__button:hover {
+  background-color: var(--header-content-button-hover-bg);
+  border-color: var(--header-content-button-hover-border-color);
+  color: var(--header-content-button-hover-color);
+  text-decoration: var(--header-content-button-hover-text-decoration);
+}
+/* ------------- */

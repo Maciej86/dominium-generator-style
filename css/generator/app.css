@@ -1,0 +1,176 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(254, 254, 254);
+}
+
+.app_main {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  padding: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+
+label {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 7px;
+  border: 1px solid rgb(214, 215, 218);
+  font-size: 14px;
+  color: rgb(80, 80, 82);
+  resize: vertical;
+}
+
+button,
+select {
+  padding: 8px 15px;
+  background: rgb(15, 121, 219);
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+button:hover,
+option:hover {
+  background: rgb(12, 93, 168);
+}
+
+button:disabled {
+  background-color: rgb(238, 238, 238);
+  color: rgb(138, 138, 138);
+}
+
+.left_panel {
+  width: 30%;
+  height: 100%;
+  padding: 0px 10px;
+  overflow: scroll;
+}
+
+.description {
+  margin: 0px 0px 5px 0px;
+  font-size: 12px;
+  color: rgb(148, 148, 148);
+}
+
+.left_panel h1 {
+  margin-top: 0;
+  color: rgb(80, 80, 82);
+  text-align: center;
+  line-height: 1;
+}
+
+.left_panel h3 {
+  margin-bottom: 5px;
+  color: rgb(80, 80, 82);
+}
+
+.right_panel {
+  flex: 1;
+}
+
+.right_panel_tabs {
+  margin-bottom: 10px;
+}
+
+.generation_html {
+  position: relative;
+  height: 97%;
+  padding: 20px;
+  border: 1px solid rgb(204, 204, 204);
+  overflow: hidden;
+}
+
+.generation_body {
+  overflow: auto;
+}
+
+.generation_navigation {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  z-index: 200;
+}
+
+.generation_cookie {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 200;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 600px;
+  max-height: 80%;
+  overflow: auto;
+}
+
+/* Generation in JS */
+.box_section {
+  margin: 10px 0px;
+  background: rgb(247, 248, 250);
+  border: 1px solid rgb(15, 121, 219);
+}
+
+.box_vars_header {
+  padding: 8px;
+  background: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 200;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+.box_vars_header.active {
+  background: rgb(15, 121, 219);
+  color: rgb(255, 255, 255);
+}
+
+.box_vars_header:hover {
+  background: rgb(12, 93, 168);
+  color: rgb(255, 255, 255);
+}
+
+.box_vars_body {
+  padding: 10px;
+}

@@ -1,0 +1,118 @@
+/* PAGE */
+.page_main {
+  margin: var(--page-main-margin);
+}
+
+@media (max-width: 500px) {
+  .page_main {
+    margin: var(--page-mobile-main-margin);
+  }
+}
+
+.header_article {
+  margin: var(--page-title-article-margin);
+}
+
+.header_article .title_page {
+  margin: 0;
+}
+
+.page_style__post {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page_style__post .page_style {
+  width: var(--page-width);
+  padding-right: var(--page-padding-right);
+}
+
+@media (max-width: 800px) {
+  .page_style__post {
+    gap: 10px;
+  }
+  .page_style__post .page_style {
+    width: 100%;
+    padding-right: 0px;
+  }
+}
+
+.page_style h1 {
+  margin: var(--page-h1-margin);
+  font-weight: var(--page-h1-font-weight);
+  font-size: var(--page-h1-font-size);
+}
+
+.page_style h2 {
+  margin: var(--page-h2-margin);
+  font-weight: var(--page-h2-font-weight);
+  font-size: var(--page-h2-font-size);
+}
+
+.page_style h3 {
+  margin: var(--page-h3-margin);
+  font-weight: var(--page-h3-font-weight);
+  font-size: var(--page-h3-font-size);
+}
+
+.page_style h4 {
+  margin: var(--page-h4-margin);
+  font-weight: var(--page-h4-font-weight);
+  font-size: var(--page-h4-font-size);
+}
+
+.page_style h5 {
+  margin: var(--page-h5-margin);
+  font-weight: var(--page-h5-font-weight);
+  font-size: var(--page-h5-font-size);
+}
+
+.page_style h6 {
+  margin: var(--page-h6-margin);
+  font-weight: var(--page-h6-font-weight);
+  font-size: var(--page-h6-font-size);
+}
+
+.page_style p strong,
+.page_style p b {
+  font-weight: var(--page-bold-text-weight);
+}
+
+.page_style a {
+  color: var(--page-link-color);
+  text-decoration: var(--page-link-text-decoration);
+}
+
+.page_style a:hover {
+  color: var(--page-link-hover-color);
+  text-decoration: var(--page-link-text-hover-decoration);
+}
+
+.page_style ul li {
+  line-height: var(--page-list-item-line-height);
+  padding: var(--page-list-item-padding);
+}
+
+.page_style .top_image_page {
+  height: var(--page-top-image-height);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page_date {
+  display: flex;
+  align-items: center;
+  gap: var(--page-date-gap);
+}
+
+.page_date {
+  font-size: var(--page-date-text-font-size);
+  color: var(--page-date-text-color);
+}
+
+.page_date .icon-calendar {
+  font-size: var(--page-date-icon-font-size);
+  color: var(--page-date-icon-color);
+}
+/* ------------- */
