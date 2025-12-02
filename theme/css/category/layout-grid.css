@@ -87,7 +87,7 @@
 }
 
 .grid__container__box__title__link:hover {
-  color: var(--layout-grid-box-title-link-hovercolor);
+  color: var(--layout-grid-box-title-link-hover-color);
   text-decoration: var(--layout-grid-box-title-link-hover-text-decoration);
 }
 
