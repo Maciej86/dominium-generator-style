@@ -55,4 +55,68 @@
 .page_main_contact {
   margin-bottom: 0;
 }
+
+.contact__form input[type="submit"] {
+  margin-top: 0px;
+}
+
+.contact__form .wpcf7-form-control-wrap {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.contact__form input.wpcf7-not-valid {
+  background-color: var(--input-not-valid-bg);
+  margin-bottom: var(--input-not-valid-margin-botom);
+  border-color: var(--input-not-valid-border-color);
+}
+
+.contact__form .wpcf7-not-valid-tip {
+  padding: var(--input-not-valid-tip-padding);
+  background-color: var(--input-not-valid-tip-bg);
+  color: var(--input-not-valid-tip-color);
+  font-size: var(--input-not-valid-tip-font-size);
+}
+
+.contact__form .wpcf7 form .wpcf7-response-output {
+  margin: var(--input-not-valid-output-margin);
+  padding: var(--input-not-valid-output-padding);
+  border: var(--input-not-valid-output-border);
+  font-size: var(--input-not-valid-output-font-size);
+  line-height: var(--input-not-valid-output-line-height);
+}
+
+.dominium-subimit-loader {
+  display: flex;
+  align-items: center;
+}
+
+.contact__form .wpcf7-spinner {
+  display: none;
+}
+
+.contact__form .dominium-spinner.wpcf7-spinner {
+  display: inline-block;
+  background-color: var(--spinner-bg);
+  border-top: var(--spinner-border);
+  border-left: var(--spinner-border);
+  border-right: var(--spinner-border);
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact__form .dominium-spinner.wpcf7-spinner::before {
+  content: "";
+  display: none;
+}
 /* ------------- */
