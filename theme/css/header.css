@@ -30,6 +30,7 @@
   .header {
     height: var(--header-mobile-height);
     padding-top: var(--header-mobile-padding-top);
+    padding-bottom: var(--header-mobile-padding-bottom);
   }
 }
 
