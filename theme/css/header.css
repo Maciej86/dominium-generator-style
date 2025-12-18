@@ -1,7 +1,7 @@
 /* HEADER */
 .header {
   position: relative;
-  height: var(--header-height);
+  height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
